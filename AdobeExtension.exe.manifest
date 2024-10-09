@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="AdobeExtension.exe" version="1.0.0.0" publicKeyToken="50d0dc4f284e16da" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="choco" version="2.3.0.0" publicKeyToken="79D02EA9CAD655EB" language="neutral" processorArchitecture="msil" />
+    <commandLine file="choco.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="choco.exe" size="11526696">
+      <assemblyIdentity name="choco" version="2.3.0.0" publicKeyToken="79D02EA9CAD655EB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>mgWHZEF6Y03LU690xQ+VUq87wLhzpWLzg682/u/BSW4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="sspicli.dll" size="369152">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Y+Sqh8+jyhXLhjcdYRn1jGAbl+Y60IxQDq5DYFhzvu8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-KGR3R5T\eshan" issuerKeyHash="614f349dc8eb8edaf76c3523ec2ddaa7b74ff432" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>C2cfAeB3LEBorG9yk5gscckp1XoPgAMXhxq+q3KE7gI=</DigestValue></Reference></SignedInfo><SignatureValue>pGr7vnO3v7xLnS2L3jo0oqKAKnqyoMFGWIdfpavOox4aHJa/YzXKEwpiyWeZKo8pYPxD9onVQEnN1IM0RJNHAe61XlJv2ILitczMgcHSlgmHCfnjFvg01J2JkAf+AQfFM6AxQJ7hGKmsZJ5Iglk5m1u/FrTMahmn3LoVU+LJzEg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>z50r4x4aMTwMJ0sHJ137vsxIqcl9RgDhD4C0IK/t5nJ1EYZGTDh598xpNbatYwTG8R3p23Wl9nC0sIOtqFvWXqSjb+2+xWahEiA7nlcJgGVdGOOePtvWP5UDa5dXbxZzGtN5kdByrxjvmG3M/qA72vbkU0Y6KlQ9v31l5BTXnpk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="02ee8472abbe1a871703800f7ad529c9712c9893726fac68402c77e0011f670b" Description="" Url=""><as:assemblyIdentity name="AdobeExtension.exe" version="1.0.0.0" publicKeyToken="50d0dc4f284e16da" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-KGR3R5T\eshan</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>GkbkwxsgQ7iNIsoRQGo4PVthMZIGTLwcsVCcsIBjnQI=</DigestValue></Reference></SignedInfo><SignatureValue>xfs9idGA02ayG4ngi1mj7Ns8xiBZgjUacLAowXCJpkm8zldNPlIoCqO5qzNItPfvqmdIkJ9diANlbHuznKApNMpptypnnf/a0VL3HH0WgodVxhtKjKhGO4ZIXQ3jzb8+odbpREQXoTww4H2/NViRSjp5nbHiODJfAxRS95rD/UE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>z50r4x4aMTwMJ0sHJ137vsxIqcl9RgDhD4C0IK/t5nJ1EYZGTDh598xpNbatYwTG8R3p23Wl9nC0sIOtqFvWXqSjb+2+xWahEiA7nlcJgGVdGOOePtvWP5UDa5dXbxZzGtN5kdByrxjvmG3M/qA72vbkU0Y6KlQ9v31l5BTXnpk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICBjCCAW+gAwIBAgIQRf4iy+kq/J1D5fqcaY2dSzANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsARwBSADMAUgA1AFQAXABlAHMAaABhAG4wHhcNMjQwOTE4MTYzNDQwWhcNMzkwMTAyMDAwMDAwWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsARwBSADMAUgA1AFQAXABlAHMAaABhAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAM+dK+MeGjE8DCdLBydd+77MSKnJfUYA4Q+AtCCv7eZydRGGRkw4effMaTW2rWMExvEd6dt1pfZwtLCDrahb1l6ko2/tvsVmoRIgO55XCYBlXRjjnj7b1j+VA2uXV28WcxrTeZHQcq8Y75htzP6gO9r25FNGOipUPb99ZeQU156ZAgMBAAGjFzAVMBMGA1UdJQQMMAoGCCsGAQUFBwMDMA0GCSqGSIb3DQEBCwUAA4GBALZejvvm15lb7wqY2h59YXbP0jHT3uCx3mE4qxuR9LSzyz2yDQrJGseAdM28cnPFpMgclk+8PZFWWKXumIwu/QKJmrIPFZUyCboLS9twJUfAu8cbiPSKIE+HtlE67HA8HA9J+9MeGlVDtjHtdoeeEDGf3McaN0UWGSAHzLTeuM7B</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
